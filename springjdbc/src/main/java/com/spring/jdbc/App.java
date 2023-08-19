@@ -51,10 +51,12 @@ public class App
 //		   
 //	
 	    
-	    //...........delete operation.....///
-	     int ans= dao.delete(98); 
-	     System.out.println(ans);
-	   
-
+//	    //...........delete operation.....///
+//	     int ans= dao.delete(98); 
+//	     System.out.println(ans);
+//	   
+        //select single data
+       Student s= dao.getStudent(99);
+       System.out.println(s);
     }
 }
