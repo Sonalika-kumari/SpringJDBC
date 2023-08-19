@@ -56,7 +56,7 @@ public class App
 //	     System.out.println(ans);
 //	   
         //select single data
-       Student s= dao.getStudent(99);
+       Student s= dao.getStudent(1);
        System.out.println(s);
     }
 }

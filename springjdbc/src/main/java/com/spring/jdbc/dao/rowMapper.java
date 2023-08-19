@@ -12,9 +12,10 @@ public class rowMapper implements RowMapper<Student>{
 	public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
 		// TODO Auto-generated method stub
 		Student student=new Student();
-		student.setId(rs.getInt(1));
-		student.setName(rs.getString(2));
-		student.setName(rs.getString(3));
+		student.setId(rs.getInt("id"));
+		student.setName(rs.getString("name"));
+		student.setCity(rs.getString("city"));
+	
 		return student;
 	}
 

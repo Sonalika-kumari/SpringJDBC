@@ -60,7 +60,7 @@ public class StudentDao implements Dao{
 		// select single data form databases
 		 String query="select* from student where id=?"; 
 		 RowMapper<Student> rowm=new rowMapper();
-		 Student stu=this.jdbctemp. queryForObject(query,rowm,id); 
+		 Student stu=this.jdbctemp.queryForObject(query,rowm,id); 
 		return stu;
 	}
 
